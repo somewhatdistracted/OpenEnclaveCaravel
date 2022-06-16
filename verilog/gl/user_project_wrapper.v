@@ -54,15 +54,15 @@ module user_project_wrapper (user_clock2,
  input [3:0] wbs_sel_i;
 
 
- user_proj_example mprj (.wb_clk_i(wb_clk_i),
+ user_proj_example mprj (.user_clock2(user_clock2),
+    .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
     .wbs_stb_i(wbs_stb_i),
     .wbs_cyc_i(wbs_cyc_i),
     .wbs_we_i(wbs_we_i),
     .wbs_ack_o(wbs_ack_o),
-    .user_clock2(user_clock2),
-    .vssd1(vssd1),
     .vccd1(vccd1),
+    .vssd1(vssd1),
     .analog_io({analog_io[28],
     analog_io[27],
     analog_io[26],

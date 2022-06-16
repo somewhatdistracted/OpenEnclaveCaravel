@@ -44,6 +44,15 @@ set ::env(CLOCK_NET) "mprj.clk"
 set ::env(CLOCK_PERIOD) "10"
 
 ## Internal Macros
+
+# PDN Pitch
+set ::env(FP_PDN_VPITCH) 200
+set ::env(FP_PDN_HPITCH) $::env(FP_PDN_VPITCH)
+
+# PDN Offset 
+set ::env(FP_PDN_VOFFSET) 6
+set ::env(FP_PDN_HOFFSET) $::env(FP_PDN_VOFFSET)
+
 ### Macro PDN Connections
 set ::env(FP_PDN_MACRO_HOOKS) "\
 	mprj vccd1 vssd1"
@@ -57,6 +66,7 @@ set ::env(VERILOG_FILES_BLACKBOX) "\
 	$script_dir/../../verilog/rtl/user_proj_example.v"
 
 set ::env(EXTRA_LEFS) "\
+	$script_dir/../../lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef \
 	$script_dir/../../lef/user_proj_example.lef"
 
 set ::env(EXTRA_GDS_FILES) "\

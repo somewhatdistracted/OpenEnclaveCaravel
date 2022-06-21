@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1655740347
+timestamp 1655762913
 << obsli1 >>
 rect 2000 2000 287982 349004
 << obsm1 >>
@@ -4027,8 +4027,8 @@ port 645 nsew signal input
 string FIXED_BBOX 0 0 292000 352000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 85803460
+string GDS_END 86960782
 string GDS_FILE /scratch/users/ianpmac/OpenEnclaveCaravel/openlane/user_project_wrapper/runs/user_project_wrapper/results/finishing/user_project_wrapper.magic.gds
-string GDS_START 84853338
+string GDS_START 86010660
 << end >>
 
